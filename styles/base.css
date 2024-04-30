@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --background-color: #DAD7CD;
+    --header-color: #588157;
+    --accent-color: #344E41;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+}
+
+#content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--header-color);
+}
+
+header img{
+    margin: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+nav ul{
+    background-color: var(--accent-color);
+    padding-inline-start: 0px;
+
+}
+
+nav ul li{
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+main h2{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--header-color);
+}
+
+.card h3{
+    background-color: var(--header-color);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

@@ -6,10 +6,13 @@
     <meta name="description" content="WDD 230 - Web Frontend Development - Aldair Morales - course assignment portal">
     <meta name="auhtor" content="Aldair Morales">
     <title>Aldair Morales - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+<div id="content">
     <header>
-        <img src="images/me.jpg" alt="Aldair Morales">
+        <img src="images/me.jpg" alt="Aldair Morales" width="210.2" height="185.1">
         <h1>Aldair Morales</h1>
     </header>
     <nav>
@@ -19,7 +22,6 @@
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
-            
         </ul>
     </nav>
     <main>
@@ -27,9 +29,21 @@
         <hr>
         <section class="card">
             <h3>Learning Activities</h3>
+            <ul>
+                <li>Week 1: <a href="#">Lesson 1</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather Information</p>
+            <p>Visits to the Page: Place Holder</p>
         </section>
     </main>
-    <footer></footer>
-    
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Aldair Morales - Idaho, USA</p>
+        <p id="lastModified"></p>
+        
+    </footer>
+</div>
 </body>
 </html>
