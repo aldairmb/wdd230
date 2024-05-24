@@ -23,9 +23,6 @@ main{
     grid-template-columns: 1fr;
 }
 
-ul{
-    list-style: none;
-}
 
 header{
     display: grid;
@@ -65,7 +62,6 @@ nav ul{
     text-align: center;
     background-color: var(--nav-color);
     padding-inline-start: 0px;
-    display: none;
 }
 
 nav ul.open{
@@ -80,7 +76,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    color: black;    
+    color: white;    
     background-color: var(--header-color);
 }
 
@@ -135,11 +131,11 @@ footer{
 }
 
 #learning-activities li a:visited{
-    color: #C279F2;
+    color: black;
 }
 
 #learning-activities li a:hover{
-    color: white;
+    color: #C279F2;
 }
 
 main ul li a{
