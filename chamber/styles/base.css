@@ -1,3 +1,153 @@
 body {
     padding: 10px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --background-color: #F2E9EB;
+    --header-color: #F2B3DC;
+    --accent-color: #F2B3DC;
+    --card-color: #F2B3DC;
+    --nav-color: #F2B3DC;;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+}
+
+#content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--header-color);
+}
+
+header img{
+    margin: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#menu-button{    
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+#menu-button::before{
+    content: "≡";
+}
+
+#menu-button.open::before{
+    content: "x";
+}
+
+nav ul.open{
+    display: block;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: var(--nav-color);
+    padding-inline-start: 0px;
+}
+
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li{
+    padding: 1rem;
+    width: 100%;
+}
+
+nav ul li:hover{
+    color: white;    
+    background-color: var(--header-color);
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;    
+}
+
+nav ul li a:hover{
+    display: block;
+    text-decoration: none;
+    color: white;    
+}
+
+
+main h2{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--header-color);
+}
+
+#learning-activities {
+    list-style: none;
+}
+
+.card{
+    border: 1px var(--header-color) solid;
+    margin: 1rem;    
+}
+
+.card h3{
+    background-color: var(--nav-color);
+    color: black;
+    margin: 0;
+    padding: 1rem;
+}
+
+.card p{
+    padding: 1rem;
+}
+
+#content main hr{
+    height: 3px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+#learning-activities li a:visited{
+    color: black;
+}
+
+#learning-activities li a:hover{
+    color: #C279F2;
+}
+
+main ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

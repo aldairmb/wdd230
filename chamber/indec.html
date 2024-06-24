@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Quinn Briggs">
+    <meta name="description" content="WDD 230 - BYU Idaho - Spring 2024 - Chamber Project">
+    <meta name="og:title" content="Teton Idaho Chamber of Commerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://qrbriggs-byui.github.io/wdd230/images/qb-head.jpg">
+    <meta name="og:url" content="https://qrbriggs-byui.github.io/wdd230/chamber/index.html">
+    <title>Teton Idaho Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/indec-base.css">
+    <link rel="stylesheet" href="styles/indec-mid.css">
+    <link rel="stylesheet" href="styles/indec-large.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <nav>
+                <div id="logo-container"><img src="../lesson03/images/Bristol-Logo.png" alt="Bristol Logo"></div>
+                <ul id="navbar">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+                <button id="menubutton"></button>
+            </nav>
+        </header>
+        <main class="home-main">
+            <section class="hero">
+                <img src="images/bristol.jpg" alt="hero image">
+                <!-- <picture>
+                    <source media="(max-width: 800px)" srcset="images/wdd230-org-800.webp">                    
+                    <source media="(max-width: 1024px)" srcset="images/wdd230-org-1024.webp">                    
+                    <img src="images/wdd230-org-1200.webp" alt="large image">
+                </picture> -->
+                <!-- <p></p> -->
+                <h1>Bristol Chamber of Commerce</h1>
+                <button>Join the Chamber</button>
+            </section>
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>4th Of July Celebration</h3>
+                        <img src="images/4th-of-july.jpg">
+                        <p>This year's 4th of July parade will be better than ever! Join us for all the patriotic fun!
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Community Clean-Up</h3>
+                        <img src="images/clean-up.jpg">
+                        <p>Join the Teton Elementary students in their annual community clean up. The clean-up starts on
+                            May
+                            30th at 9:00 A.M. at the elementary school. See you there!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-card">
+                    <img src="images/sunny.png">
+                    <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
+                    <p>Current Temp: <span id="temperature">20</span>&deg;F</p>
+                    <p>Current Wind: <span id="windspeed">10</span> MPH</p>
+                    <p>Windchill: <span id="windchill"></span></p>
+                </div>
+            </section>
+            <section class="spotlights">
+                <section class="spotlight spotlight1">
+                    <h3>Teton Turf and Tree</h3>
+                    <img src="images/teton-turf.jpg" alt="Teton Turf and Tree Logo">
+                    <p>Growing trees since 1990 and sod since 1996, Teton Turf & Tree Farms is the premier Rexburg sod
+                        grower and tree wholesaler in Southeastern Idaho.</p>
+                </section>
+                <section class="spotlight spotlight2">
+                    <h3>Shogun Crafts</h3>
+                    <img src="images/shogun-crafts.jpg" alt="Shogun Crafts Logo">
+                    <p>We are fabric store that has been serving the public for 10+ years. We offer services such as
+                        quilting quilts and hemstitching receiving blankets.</p>
+                </section>
+                <section class="spotlight spotlight3">
+                    <h3>Tacos Gonzales</h3>
+                    <img src="images/tacos-gonzales.jpg" alt="Tacos Gonzales Logo">
+                    <p>Family owned, Located in Teton City, right behind the post office, homemade tortillas every day!
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="main-footer">
+                <div>
+                    <img src="images/teton-idaho-logo-transparent-med.webp" alt="logo image">
+                </div>
+                <div>
+                    <p>Teton Idaho Chamber of Commerce</p>
+                    <p>123 Main Street</p>
+                    <p>Teton, ID 83451</p>
+                    <p><a href="mailto:info@tetonchamber.org">info@tetonchamber.org</a></p>
+                </div>
+            </div>
+            <div class="base-footer">
+                <p>&copy;<span id="currentYear"></span> Quinn Briggs</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
