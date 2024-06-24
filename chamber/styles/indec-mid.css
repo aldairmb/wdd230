@@ -3,6 +3,8 @@
     h1{
         font-size: 3rem;
     }
+
+    
 }
 
 @media screen and (min-width: 700px){
@@ -11,25 +13,6 @@
         font-size: 4rem;
     }
 
-    .event-cards{
-        display: flex;
-        justify-content: space-around;
-    }
-    .event-card{
-        width: 100%;
-    }
-    .spotlights{
-        display: flex;    
-    }
-
-    .spotlight{
-        width: 100%; 
-        min-width: 150px;       
-    }
-
-    .spotlight img{
-        width: 100px;
-    }
     #navbar{     
         display: flex;
         flex-direction: row;
@@ -45,23 +28,24 @@
     .hero p::before{
         content: "medium";
     }
+
+    #logo-container {
+        display: flex;
+        flex: 0 0 auto;
+        margin-right: 1rem;
+        background-color: var(--header-color);
+    }
     
-    /** Demographics Page Updates **/
-
-    .discover-demographics{
-        border-right: 5px solid var(--hover-background-color);
-        padding: 1rem;
+    #logo-container img {
+        height: 80px;
     }
 
-    .discover-main{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-
-    .discover-main img:hover{
-        box-shadow: 5px 5px black;
-        filter: blur(2px);
-        
+    nav {
+        background-color: var(--nav-color);
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        justify-content: left;
     }
 }
 

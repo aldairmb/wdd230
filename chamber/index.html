@@ -1,74 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development - Aldair Morales - course assignment portal">
     <meta name="author" content="Aldair Morales">
-    <title>Aldair Morales - WDD 230 - Web Frontend Development</title>
-    <meta property="og:title" content="Aldair Morales - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="Aldair Morales Frontend Development Class Website">
-    <meta property="og:image" content="https://aldairmb.github.io/wdd230/images/me.jpg">
-    <meta property="og:url" content="https://aldairmb.github.io/wdd230/">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/getdates.js" defer></script>
-    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="WDD 230 - BYU Idaho - Spring 2024 - Chamber Project">
+    <meta name="og:title" content="Brsitol Chamber of Commerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://aldairmb.github.io/wdd230/chamber/images/bristol.jpg">
+    <meta name="og:url" content="https://aldairmb.github.io/wdd230/chamber/index.html">
+    <title>Bristol Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/indec-base.css">
+    <link rel="stylesheet" href="styles/indec-mid.css">
+    <link rel="stylesheet" href="styles/indec-large.css">
     <script src="scripts/hamburger.js" defer></script>
 </head>
 <body>
-<div id="content">
-    <div class="hero">
-        <img src="images/bristol.jpg" alt="Bristol">
-    </div>
-    <header>
-        <h1>Aldair Morales</h1>
-    </header>
-    <button id="menu-button"></button>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <hr>
-        <div id="cards">
-            <section class="card">
-                <h3>Learning Activities</h3>
-                <ul id="learning-activities">
-                    <li>Week 1: <a href="lesson01/holygrail.html">Holy Grail</a></li>
-                    <li>Week 2: <a href="lesson02/design-principles.html">Design Principles, </a><a href="lesson02/media-query.html">Media Query</a></li>
-                    <li>Week 3:</li>
-                    <li>Week 4:</li>
-                    <li>Week 5:</li>
-                    <li>Week 6:</li>
-                    <li>Week 7:</li>
+    <div id="content">
+        <header>
+            <button id="menubutton"></button>
+            <nav>
+                <div id="logo-container"><img src="../lesson03/images/Bristol-Logo.png" alt="Bristol Logo"></div>
+                <ul id="navbar">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                 </ul>
+            </nav>
+        </header>
+        <main class="home-main">
+            <section class="hero">
+                <img src="images/bristol.jpg" alt="hero image">
+                <h1>Bristol Chamber of Commerce</h1>
+                <button id="join">Join the Chamber</button>
             </section>
-            <section class="card">
-                <h3>Information</h3>
-                <p>Weather Information</p>
-                <p>Visits to the Page: Place Holder</p>
+            <sectionc class="event">
+                <h3>Events</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente totam esse corrupti optio repudiandae delectus veritatis ab eius dolorum porro amet quasi rerum numquam, incidunt ratione ad sequi? Pariatur, ipsum.</p>
             </section>
-            <section class="card map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.800718310879!2d-111.7848273243336!3d43.81849284172528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b002f100001%3A0xe0c5cd7873974ad9!2sThe%20Crossroads!5e0!3m2!1sen!2sus!4v1716518991270!5m2!1sen!2sus"
-                    width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="wheather">
+                <h3>Wheather</h3>
+                <p>Current Conditions = Ugly</p>
+                <p>Current Temp: 100&deg;F</p>
             </section>
-        </div>
-    </main>
-    <footer>
-        <p>&copy;<span id="currentYear"></span> - Aldair Morales - Rexburg, ID, USA</p>
-        <p id="lastModified"></p>
-        
-    </footer>
-</div>
+            <section class="spotlights">
+                <section class="spotlight1">
+                    <h3>Spotlight 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
+                </section>
+                <section class="spotlight2">
+                    <h3>Spotlight 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
+                </section>
+                <section class="spotlight3">
+                    <h3>Spotlight 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
+                </section>
+            </section>
+    
+        </main>
+        <hr>
+        <footer>
+            <img src="../lesson03/images/Bristol-Logo.png" alt="Logo image">
+            <p>Bristol Chamber of Commerce</p>
+            <p>123 Main Street</p>
+            <p>info@bristolchamber.org</p>
+            <div id="actual-footer">
+                <p>&copy;<span id="currentYear"></span> Aldair Morales</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+    
+        </footer>
 </body>
+
 </html>
