@@ -25,7 +25,7 @@ body{
 
 h1{
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 header{
@@ -97,8 +97,6 @@ nav {
 /** Home Page Main Styles **/
 
 .hero{
-    border-top: 2px solid var(--nav-color);
-    border-bottom: 2px solid var(--nav-color);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -109,13 +107,6 @@ nav {
     position: absolute;
     top: 0px;
     right: 20px;
-}
-
-.hero p::before{
-    content: "small";
-    background-color: grey;
-    opacity: .5;
-    font-size: 2rem;    
 }
 
 .hero img{
@@ -134,16 +125,16 @@ nav {
 }
 
 #join {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .hero button{
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--nav-color);
-    padding: 14px;
+    padding: 8px;
     border-radius: 8px;
     margin-top: 20px;
     z-index: 2;
@@ -180,4 +171,53 @@ footer img{
     background-color: var(--header-color);
     padding: 10px;
 }
+
+.event{
+    background-color: var(--card-color);
+    border: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.event p, h3{
+    margin: 10px;
+    color: white;
+}
+
+.wheather{
+    background-color: var(--card-color);
+    border: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.wheather p, h3{
+    margin: 10px;
+    color: white;
+}
+
+.spotlights{
+    background-color: var(--card-color);
+    border: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.spotlights p, h3{
+    margin: 10px;
+    color: white;
+}
+
+.hr{
+    height: 2px;
+    background-color: black;
+    border: none;
+    width: 80%;
+}
+
+
 
