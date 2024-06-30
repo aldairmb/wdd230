@@ -11,7 +11,7 @@ submitbutton.addEventListener("click", () =>{
 
     let newitem = document.createElement("li")
 
-    let deletebutton = document.createComment("button")
+    let deletebutton = document.createElement("button")
 
     newitem.innerText = favchap.value
 
@@ -23,7 +23,7 @@ submitbutton.addEventListener("click", () =>{
 
     deletebutton.addEventListener("click", () => {
         newitem.remove()
-        favchap,focus()
+        favchap.focus()
     })
 
     favchap.value = ""
