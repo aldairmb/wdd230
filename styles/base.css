@@ -18,6 +18,11 @@ body{
     margin: 0 auto;
 }
 
+.temple img{
+    width: 100%;
+    height: auto;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr;
