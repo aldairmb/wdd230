@@ -4,7 +4,6 @@ datespan.innerText = new Date().getFullYear()
 let lastmodifiedspan = document.querySelector("#lastModified")
 lastmodifiedspan.innerText = document.lastModified
 
-// dark mode stuff
 let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{    
     darkbutton.classList.toggle("dark")
@@ -29,7 +28,6 @@ darkbutton.addEventListener("click", () =>{
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=51.152898&lon=-2.5721891&appid=fecd679bd337483755d0c38920a89788&units=metric';
 
-// select HTML elements in the document
 const currentTemp = document.querySelector('#currentTemp');
 const weatherIcon = document.querySelector('#weatherIcon');
 const captionDesc = document.querySelector('figcaption');
