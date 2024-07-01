@@ -1,6 +1,8 @@
-let menu_button = document.getElementById("menu-button")
-let navlist = document.querySelector("nav ul")
-menu_button.addEventListener('click', () =>{
-    menu_button.classList.toggle("open")
-    navlist.classList.toggle("open")
-})
+// Hamburger menu
+let menubutton = document.getElementById("menubutton");
+let navbar = document.getElementById("navbar");
+
+menubutton.addEventListener("click", () => {
+    menubutton.classList.toggle("open");
+    navbar.classList.toggle("open");
+});

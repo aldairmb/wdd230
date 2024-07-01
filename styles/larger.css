@@ -1,18 +1,22 @@
 @media screen and (min-width:800px){
 
-    nav ul{
+    nav #navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
+    nav #navbar.open {
+        flex-direction: row;
+    }
+
+    #menubutton {
+        display: none;
+    }
+    
     #cards{
         display: grid;
         grid-template-columns: 2fr 1fr;
-    }
-
-    #menu-button{
-        display: none;
     }
 
     .map{
