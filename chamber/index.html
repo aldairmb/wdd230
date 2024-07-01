@@ -14,10 +14,11 @@
     <title>Bristol Chamber of Commerce</title>
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/indec-base.css">
-    <link rel="stylesheet" href="styles/indec-mid.css">
-    <link rel="stylesheet" href="styles/indec-large.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-mid.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
 </head>
 <body>
     <div id="content">
@@ -25,6 +26,7 @@
             <button id="menubutton"></button>
             <nav>
                 <div id="logo-container"><img src="../lesson03/images/Bristol-Logo.png" alt="Bristol Logo"></div>
+                <button id="dark-mode"></button>
                 <ul id="navbar">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
@@ -42,28 +44,41 @@
             <div id="cards">
                 <section class="event">
                     <h3>Events</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente totam esse corrupti optio repudiandae delectus veritatis ab eius dolorum porro amet quasi rerum numquam, incidunt ratione ad sequi? Pariatur, ipsum.</p>
+                    <ul>
+                        <li>Farmers Market - Every Saturday, 8 AM - 1 PM at Market Square. Fresh produce, local crafts, and live music.</li>
+                        <li>Business Networking Breakfast - First Tuesday of every month, 7:30 AM - 9 AM at the Bristol Community Center.</li>
+                        <li>Art in the Park - June 15th, 10 AM - 4 PM at Bristol Park. A day of art exhibits, workshops, and performances.</li>
+                        <li>Annual Charity Gala - September 10th, 7 PM - 11 PM at the Bristol Grand Hotel. An elegant evening of dinner, dancing, and fundraising.</li>
+                        <li>Small Business Workshop - October 5th, 9 AM - 12 PM at the Bristol Library. Learn tips and strategies for growing your small business.</li>
+                    </ul>
                 </section>
                 <section class="wheather">
                     <h3>Wheather</h3>
-                    <p>Current Conditions = Ugly</p>
-                    <p>Current Temp: 100&deg;F</p>
-                </section>
-                <section class="spotlights">
-                    <section class="spotlight1">
-                        <h3>Spotlight 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
-                    </section>
-                    <section class="spotlight2">
-                        <h3>Spotlight 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
-                    </section>
-                    <section class="spotlight3">
-                        <h3>Spotlight 3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint odit aliquid a quidem, minima reiciendis? Veniam optio nam hic incidunt illum, cum excepturi id magni et dolorem at doloremque reiciendis. Blanditiis, tenetur optio? Quia, alias! Eligendi consectetur eum similique! Quaerat nobis assumenda odio eveniet voluptas iure ad sit molestiae!</p>
-                    </section>
+                    <p>The current temperature in Bristol is <span id="currentTemp"></span></p>
+                    <figure>
+                      <img id="weatherIcon" src="" alt="">
+                      <figcaption></figcaption>
+                    </figure>
                 </section>
             </div>
+            <H2>Member Spotlights</H2>
+            <section class="spotlights">
+                <section class="spotlight1">
+                    <h3>Bristol Museum</h3>
+                    <p>Explore the rich history and diverse exhibitions at the Bristol Museum, showcasing artifacts and cultural treasures.</p>
+                    <img src="images/museum.jpg" alt="Museum">
+                </section>
+                <section class="spotlight2">
+                    <h3>Bristol University</h3>
+                    <p>Discover Bristol University's contributions to the community through research, cultural events, and educational opportunities for all residents, fostering a vibrant and inclusive environment for everyone.</p>
+                    <img src="images/university.png" alt="Bristol University">
+                </section>
+                <section class="spotlight3">
+                    <h3>Mrs. Potts</h3>
+                    <p>Explore the offerings of Mrs. Potts, a cherished chocolate shop known for its artisanal treats and delightful confections enjoyed by the community.</p>
+                    <img src="images/mspots.jpeg" alt="Mrs. Potts">
+                </section>
+            </section>
     
         </main>
         <hr class="hr">

@@ -94,11 +94,14 @@
         margin: 20px;
     }
     
-    .event p, h3{
+    .event p, h3, ul{
         margin: 15px;
         color: white;
     }
     
+    .event ul{
+        margin-bottom: 20px;
+    }
     .wheather{
         background-color: var(--card-color);
         border: 2px;
@@ -106,22 +109,43 @@
         margin: 20px;
     }
     
-    .wheather p, h3{
+    .wheather{
         margin: 15px;
         color: white;
+        text-align: center;
     }
     
     .spotlights{
-        background-color: var(--card-color);
-        border: 2px;
+        background-color: var(--body-color);
+        border: 10px;
         border-radius: 8px;
-        margin: 20px;
+        margin: 10px;
+        padding: 5px;
     }
     
     .spotlights p, h3{
         margin: 15px;
         color: white;
     }
+
+    /* Dark Mode */
+#dark-mode{
+    background-color: white;
+    height: 2rem;
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+}
+
+.spotlights{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.spotlight1,.spotlight2, .spotlight3 {
+    max-width: 95%;
+}
+
 
 }
 
