@@ -25,7 +25,7 @@ body{
 
 h1{
     font-family: var(--heading-font);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 header{
@@ -196,31 +196,66 @@ footer img{
 }
 
 .event{
-    background-color: var(--card-color);
+    border: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--body-color);
+}
+
+.event1{
     border: 10px;
     border-radius: 8px;
     margin: 10px;
-    padding: 5px;
+    padding: 15px;
+    background-color: var(--card-color);
+    padding-bottom: 15px;
 }
+
 
 .event p, h3, ul{
     margin: 10px;
     color: white;
 }
 
+.event img{
+    max-width: 72%;
+    margin-top:  10px;
+    margin-left: 25px;
+    padding: 15px;
+
+}
+
 .wheather{
-    background-color: var(--card-color);
     border: 10px;
-    border-radius: 8px;
     margin: 10px;
     padding: 5px;
+    background-color: var(--body-color);
 }
 
 
-.wheather{
-    margin: 10px;
+.wheather1 {
+    background-color: var(--card-color);
+    border-radius: 8px;
     color: white;
+    padding-bottom: 15px;
     text-align: center;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  #forecast section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #forecast img, #wheather1 img {
+  width: 50px;
+  height: auto;
 }
 
 .spotlights{
