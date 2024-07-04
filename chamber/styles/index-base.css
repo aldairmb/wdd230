@@ -130,7 +130,7 @@ nav {
     right: 20px;
 }
 
-.hero img{
+.hero img, picture{
     width: 100%;
     position: relative;
 }
@@ -250,12 +250,13 @@ h2{
     background-color: var(--card-color);
     border-radius: 8px;
     padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .spotlight1 img{
     max-width: 80%;
     margin: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .spotlight2{
@@ -263,12 +264,13 @@ h2{
     background-color: var(--card-color);
     border-radius: 8px;
     padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .spotlight2 img{
     max-width: 80%;
     margin: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .spotlight3{
@@ -276,12 +278,13 @@ h2{
     background-color: var(--card-color);
     border-radius: 8px;
     padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .spotlight3 img{
     max-width: 80%;
     margin: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .hr{
