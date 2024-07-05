@@ -16,7 +16,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="chamber/scripts/weather.js" defer></script>
     <script src="scripts/visits.js" defer></script>
 </head>
 <body>
@@ -62,7 +62,17 @@
             </section>
             <section class="card">
                 <h3>Information</h3>
-                <p>Weather <span id="currentTemp"></span></p>
+                <section class="wheather">
+                    <section class="wheather1">
+                        <p><img id="weather-icon" src="weather-icon" alt="weather-conditions"></p>
+                        <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>                    
+                        <p>Current Temp: <span id="temperature">20</span>&deg;F</p>
+                        <p>Current Wind: <span id="windspeed">10</span> MPH</p>                    
+                        <hr>                               
+                        <section id="forecast">
+                        </section>
+                    </section>
+                </section>
                 <p>Number of visits: <span id="visits">Placeholder</span></p>
             </section>
             <section class="card map">

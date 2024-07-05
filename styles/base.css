@@ -158,7 +158,6 @@ footer{
 
 .temple img{
     border: 2px black solid;
-    /* width: 100%; */
 }
 
 .temple p{
@@ -170,4 +169,13 @@ footer{
     padding: .5rem;
     border: 1px black solid;
     border-radius: 4px;
+}
+
+#forecast{
+    display: none;
+}
+
+.wheather{
+    text-align: center;
+    align-items: center;
 }
