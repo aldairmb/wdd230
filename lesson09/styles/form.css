@@ -1,0 +1,53 @@
+input{
+    display: block;
+    margin: 0 0 1rem 0;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+#rating{
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#rangevalues{
+    margin: 0;        
+    display: flex;
+    width: 215px;
+}
+
+#rangvalues option{
+    flex: 1;
+}
+
+button{
+    background-color: var(--nav-color);
+    color: white;
+    padding: .7rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+#message{
+    color: red;
+}
+
+.redstar{
+    color: red;    
+}
