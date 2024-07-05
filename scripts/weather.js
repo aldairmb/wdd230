@@ -24,27 +24,30 @@ function showCurrentTimeForecast(forecasts){
 }
 
 async function fetchForecast() {
-    try {
-      const response = await fetch(weatherURL);
-      if (response.ok) {
-        const data = await response.json();        
-        showCurrentTimeForecast(data.list);
-  
-        // Update current temperature
-        const currentTemp = data.list[0].main.temp.toFixed(0);
-        document.getElementById("temperature").textContent = currentTemp;
-        document.getElementById("current-conditions").textContent = data.list[0].weather[0].description;
-        document.getElementById("windspeed").textContent = data.list[0].wind.speed.toFixed(0);
-  
-        // Update current weather icon
-        const currentIcon = data.list[0].weather[0].icon;
-        document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${currentIcon}@2x.png`;
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
+  try {
+    const response = await fetch(weatherURL);
+    if (response.ok) {
+      const data = await response.json();
+
+      // Update current temperature
+      const currentTemp = data.list[0].main.temp.toFixed(0);
+      document.getElementById("temperature").textContent = currentTemp;
+
+      // Update current weather conditions
+      document.getElementById("current-conditions").textContent = data.list[0].weather[0].description;
+
+      // Update current wind speed
+      document.getElementById("windspeed").textContent = data.list[0].wind.speed.toFixed(0);
+
+      // Update current weather icon
+      const currentIcon = data.list[0].weather[0].icon;
+      document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${currentIcon}@2x.png`;
+    } else {
+      throw Error(await response.text());
     }
+  } catch (error) {
+    console.log(error);
   }
+}
 
 fetchForecast();
