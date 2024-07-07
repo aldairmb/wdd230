@@ -486,7 +486,7 @@ footer img {
 
 .directory-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     padding: 20px;
 }
@@ -498,7 +498,7 @@ footer img {
 
 .directory-cards section{
     text-align: center;    
-    width: 300px;
+    width: 250px;
     background-color: var(--card-color);
     padding: 1rem;
     margin: .5rem;
