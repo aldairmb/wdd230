@@ -1,12 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aldair Morales">
+    <meta name="description" content="WDD 230 - BYU Idaho - Spring 2024 - Chamber Project">
+    <meta name="og:title" content="Brsitol Chamber of Commerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://aldairmb.github.io/wdd230/chamber/images/bristol.jpg">
+    <meta name="og:url" content="https://aldairmb.github.io/wdd230/chamber/index.html">
     <title>Join</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-mid.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
 </head>
 <body>
-    <h1>🥸</h1>
+    <div id="content">
+        <header>
+            <button id="menubutton"></button>
+            <nav>
+                <div id="logo-container"><img src="../lesson03/images/Bristol-Logo.png" alt="Bristol Logo"></div>
+                <button id="dark-mode"></button>
+                <ul id="navbar">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="join">
+            <div id="join-form">
+                <form method="GET" action="thankyou.html">
+                    <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="myinput">Title<input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label class="myinput">Business Description<textarea name="description" cols="40"
+                            rows="5"></textarea></label>
+                    <input id="join-time" type="hidden" name="join-time" value="">
+                    <button class="mysubmit">Join the Chamber!</button>
+                </form>
+            </div>
+            <div id="membership-info">
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is no fee</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="hr">
+        <footer>
+            <img src="../lesson03/images/Bristol-Logo.png" alt="Logo image">
+            <p>Bristol Chamber of Commerce</p>
+            <p>123 Main Street</p>
+            <p>info@bristolchamber.org</p>
+            <div id="actual-footer">
+                <p>&copy;<span id="currentYear"></span> Aldair Morales</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
     
+        </footer>
+    </div>
 </body>
+
 </html>

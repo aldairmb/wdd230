@@ -98,6 +98,7 @@ nav {
     justify-content: center;
 }
 
+
 #navbar li.active {
     background-color: var(--header-color);
 }
@@ -169,6 +170,10 @@ nav {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
+}
+
+#join:hover{
+    background-color: darkred;
 }
 
 hr {
@@ -374,4 +379,81 @@ footer img {
 
 .discover-main img {
     height: auto;
+}
+
+/* Join Page */
+
+#join-form{
+    margin: 1rem;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    padding: 15px;
+}
+
+#join-form h3{
+    margin-left: 0;
+}
+.myinput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.myinput label {
+    margin-bottom: 5px;
+}
+
+.myinput input,
+.myinput textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.myradio {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mysubmit {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.mysubmit:hover {
+    background-color: darkred;
+}
+
+.myinput input::placeholder {
+    font-size: 16px;
+}
+
+#membership-info{
+    margin: 15px;
+    background-color: var(--card-color);
+    padding: 20px;
+}
+
+#membership-info h2{
+    color: white;
+    margin-left: 0;
+}
+
+/* Thank You Page */
+#thank-you{
+    color: var(--inv-text-color);
+    margin: 15px;
+    background-color: white;
+    padding: 15px;
+}
+
+#thank-you p{
+    margin-left: 24px;
 }
