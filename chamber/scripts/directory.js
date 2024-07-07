@@ -39,7 +39,7 @@ const displayMembers = (members) => {
     <p>${business.name}</p>
     <p>${business.streetAddress}</p>
     <p>${business.cityStateZip}</p>
-    <p><a class="card-button" href="${business.websiteURL}">Website</a></p>
+    <p><a class="card-button" href="${business.websiteURL}">Visit</a></p>
     `;
     cards.appendChild(card);
   }); // end of forEach loop
