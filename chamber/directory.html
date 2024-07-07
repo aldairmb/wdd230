@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aldair Morales">
+    <meta name="description" content="WDD 230 - BYU Idaho - Spring 2024 - Chamber Project">
+    <meta name="og:title" content="Brsitol Chamber of Commerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://aldairmb.github.io/wdd230/chamber/images/bristol.jpg">
+    <meta name="og:url" content="https://aldairmb.github.io/wdd230/chamber/index.html">
+    <title>Directory</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/index-base.css">
+    <link rel="stylesheet" href="styles/index-mid.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <button id="menubutton"></button>
+            <nav>
+                <div id="logo-container"><img src="../lesson03/images/Bristol-Logo.png" alt="Bristol Logo"></div>
+                <button id="dark-mode"></button>
+                <ul id="navbar">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="directory-main">
+            <div id='directory-selector'>
+                <button id="directory-grid" class="active">GRID</button>
+                <button id="directory-list">LIST</button>
+            </div>
+            <div id='directory-data' class='directory-cards'>
+            </div>
+        </main>
+        <hr class="hr">
+        <footer>
+            <img src="../lesson03/images/Bristol-Logo.png" alt="Logo image">
+            <p>Bristol Chamber of Commerce</p>
+            <p>123 Main Street</p>
+            <p>info@bristolchamber.org</p>
+            <div id="actual-footer">
+                <p>&copy;<span id="currentYear"></span> Aldair Morales</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+
+</html>

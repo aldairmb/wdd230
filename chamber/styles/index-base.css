@@ -457,3 +457,101 @@ footer img {
 #thank-you p{
     margin-left: 24px;
 }
+
+/* Directory Page Stuff */
+
+.directory-main{
+    width: 100%;
+}
+
+#directory-selector{
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+}
+
+#directory-selector button.active{
+    background-color: red;
+}
+
+/* Cards view */
+
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    padding: 20px;
+}
+
+.directory-cards img{
+    max-width: 80%;
+    padding: 20px;
+}
+
+.directory-cards section{
+    text-align: center;    
+    width: 300px;
+    background-color: var(--card-color);
+    padding: 1rem;
+    margin: .5rem;
+}
+
+
+.directory-cards .card-button{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.directory-cards .card-button:hover{
+    background-color: darkred;
+}
+
+/* List View */
+
+.directory-list{    
+    display: grid;    
+    justify-items: center;   
+    padding: 1rem;    
+    font-size: 12px;
+}
+
+.directory-list section img{
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list .card-button{
+    text-decoration: underline;
+    color: white;   
+}
+
+.directory-list section:nth-child(odd) .card-button {
+    color: var(--inv-text-color);
+}
+
+.directory-list section:nth-child(odd) {
+    background-color: var(--body-color);
+    color: var(--inv-text-color);
+}
+
+.directory-list section:nth-child(even) {
+    background-color: var(--card-color)
+}

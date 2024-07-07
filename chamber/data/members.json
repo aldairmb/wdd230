@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Bristol University",
+            "streetAddress": "Beacon House, Queens Rd",
+            "cityStateZip": "Bristol, BS8 1TH",
+            "phoneNumber": "+44 117 928 9000",
+            "websiteURL": "https://www.bristol.ac.uk/",
+            "imageURL": "images/university.webp",
+            "membershipLevel": "Gold",
+            "adcopy": "Bristol University is a prestigious institution known for its research excellence and vibrant campus life."
+        },
+        {
+            "name": "Cabot Circus Centre",
+            "streetAddress": "Glass House, Penn Street",
+            "cityStateZip": "Bristol, BS1 3BX",
+            "phoneNumber": "+44 117 952 9360",
+            "websiteURL": "https://cabotcircus.com/",
+            "imageURL": "images/mall.webp",
+            "membershipLevel": "Silver",
+            "adcopy": "Cabot Circus is the heart of shopping and dining in Bristol, offering a wide range of stores and entertainment options."
+        },
+        {
+            "name": "Temple Meads Station",
+            "streetAddress": "Station St, Temple Meads",
+            "cityStateZip": "Bristol, BS1 6QF",
+            "phoneNumber": "+44 345 7000 125",
+            "websiteURL": "https://www.networkrail.co.uk/stations/bristol-temple-meads/",
+            "imageURL": "images/station1.webp",
+            "membershipLevel": "Bronze",
+            "adcopy": "Bristol Temple Meads is the main railway station serving Bristol, with historic architecture and excellent transport links."
+        },
+        {
+            "name": "Bristol Museum",
+            "streetAddress": "Queens Rd, Clifton",
+            "cityStateZip": "Bristol, BS8 1RL",
+            "phoneNumber": "+44 117 922 3571",
+            "websiteURL": "https://www.bristolmuseums.org.uk/bristol-museum-and-art-gallery/",
+            "imageURL": "images/museum1.webp",
+            "membershipLevel": "Non-Profit",
+            "adcopy": "Bristol Museum houses a diverse collection of art and historical artifacts, showcasing Bristol's rich cultural heritage."
+        },
+        {
+            "name": "Clifton Bridge",
+            "streetAddress": "Bridge Rd, Leigh Woods",
+            "cityStateZip": "Bristol, BS8 3PA",
+            "phoneNumber": "+44 117 974 4664",
+            "websiteURL": "https://www.cliftonbridge.org.uk/",
+            "imageURL": "images/Clifton-Suspension-Bridge.webp",
+            "membershipLevel": "Gold",
+            "adcopy": "The Clifton Suspension Bridge is an iconic symbol of Bristol, offering stunning views and a testament to Victorian engineering."
+        },
+        {
+            "name": "Mrs. Potts",
+            "streetAddress": "21 Park St",
+            "cityStateZip": "Bristol, BS1 5NH",
+            "phoneNumber": "+44 117 925 3322",
+            "websiteURL": "https://mrspottschocolatehouse.co.uk/",
+            "imageURL": "images/mspots.webp",
+            "membershipLevel": "Silver",
+            "adcopy": "Mrs. Potts Chocolate House is a charming café known for its delicious homemade chocolates and delightful afternoon teas."
+        },
+        {
+            "name": "Nandos",
+            "streetAddress": "84 Park St",
+            "cityStateZip": "Bristol, BS1 5LA",
+            "phoneNumber": "+44 117 927 3520",
+            "websiteURL": "https://www.nandos.co.uk/",
+            "imageURL": "images/nandos.webp",
+            "membershipLevel": "Bronze",
+            "adcopy": "Nando's is famous for its peri-peri chicken and vibrant atmosphere, a favorite spot for casual dining in Bristol."
+        }
+    ]
+}
