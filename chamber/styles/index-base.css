@@ -555,3 +555,21 @@ footer img {
 .directory-list section:nth-child(even) {
     background-color: var(--card-color)
 }
+
+/* Meet and great */
+.meet-greet{
+    background-color: white;
+    grid-column: 1/4;
+    text-align: center;
+    display: none;
+    color: #000000;
+}
+
+.meet-greet.show{
+    display: block;
+}
+
+.meet-greet button{
+    background-color: white;
+    color: black;
+}
