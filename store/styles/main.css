@@ -106,7 +106,7 @@ nav {
     }
 
     #navbar li a {
-        font-size: 2vh;
+        font-size: 1.5vw;
         padding: 10px;
     }
 
@@ -125,6 +125,10 @@ nav {
         background-color: var(--header-color);
     }
 
+    #logo-container img {
+        height: 7vh;
+    }
+
     nav {
         background-color: var(--nav-color);
         display: flex;
@@ -137,5 +141,19 @@ nav {
     #navbar {
         display: flex;
         flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    /* Navigation Styles */
+
+    #navbar li a {
+        font-size: 1.2vw;
+    }
+
+    #logo-container img {
+        height: 5vw;
     }
 }

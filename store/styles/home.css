@@ -22,6 +22,7 @@
     text-align: left;
     padding: 20px;
     z-index: 1;
+    padding-left: 40px;
 }
 
 .hero h1 {
@@ -33,7 +34,7 @@
 
 .hero img {
     display: block;
-    max-width: 80%;
+    max-width: 70%;
     max-height: 80vh;
     object-fit: contain;
     margin: 0;
@@ -43,22 +44,131 @@
 #merch {
     background-color: var(--header-color);
     color: var(--text-color);
-    padding: 15px;
+    padding: 2vh;
     text-align: left;
-    margin-left: 3vw;
     margin-top: 20px;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+/* Best Sellers */
+
+.merch {
+    background-color: var(--text-color);
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.merch h2 {
+    margin-top: 0;
+    font-size: 4vh;
+    padding: 3vw 0px 0px 3vw;
+}
+
+.item {
+    background-color: var(--body-color);
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: flex; 
+    border: 15px;
+}
+
+.products img,
+.best-sellers img {
+    width: 200%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.products p,
+.best-sellers p {
+    text-align: center;
+    color: var(--inv-text-color);
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.product-description {
+    font-style: italic;
     font-size: 2vh;
 }
 
+.product-price {
+    color: var(--inv-text-color);
+    font-size: 2.5vh;
+}
+
+.see-more {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+ /* Bottom Section */
+
+.bottom{
+    padding: 30px;
+    background-color: var(--body-color):
+
+}
+
+ /* Bottom Section */
+
+ .wheather, .order-count {
+    background-color: var(--text-color);
+    margin: 30px;
+    padding: 30px;
+ }
+
+
+
+@media (max-width: 700px) {
+
+    .products p,.best-sellers p {
+        max-width: 60%;
+        margin-left: 20%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+
+    }   
+
+
+    .product-price {
+       padding-bottom: 20px;
+    }
+
+}
+
+
 /* Styles for screens 700px and wider */
 @media screen and (min-width: 700px) {
+
+    
     .hero {
         height: 55vh;
+    }
+
+    .hero h1 {
+        font-size: 18vw;
+        text-align: left;
     }
     
     .hero div {
         position: absolute;
-        top: 30%;
+        text-align: left;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
@@ -66,16 +176,56 @@
     
     .hero img {
         position: absolute;
-        top: 40%;
+        top: 70%;
         right: 0;
         transform: translateY(-50%);
         width: auto;
-        max-width: 40%; 
+        max-width: 60%; 
         max-height: 100%; 
         object-fit: contain; 
         z-index: 1;
         margin: 0;
     }
+
+    #merch {
+        text-align: left;
+        margin-left: 3vw;
+    }
+
+    /* Best Sellers */
+    .products,
+    .best-sellers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw; 
+        padding: 2vw;
+        max-height: 50%;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .products img,
+    .best-sellers img {
+        width: 180%;
+    }
+
+    .products p,.best-sellers p {
+        text-align: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    /* Bottom Section*/
+
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+    }
+
 }
 
 /* Styles for screens 1100px and wider */
@@ -83,6 +233,10 @@
     .hero {
         height: 100vh;
     }
+
+    .hero h1 {
+        font-size: 15vw;
+    }
     
     .hero div {
         position: absolute;
@@ -94,11 +248,11 @@
     
     .hero img {
         position: absolute;
-        top: 55%;
+        top: 60%;
         right: 0;
         transform: translateY(-50%);
         width: auto;
-        max-width: 40%;
+        max-width: 85%;
         max-height: 100%;
         object-fit: contain;
         z-index: 1;
@@ -108,4 +262,8 @@
     #merch {
         font-size: 2.5vh;
     }
+
+    
 }
+
+ 

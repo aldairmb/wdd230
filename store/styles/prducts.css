@@ -9,7 +9,12 @@
     --paragraph-font: Helvetica, sans-serif;
 }
 
-.item1, .item2, .item3 {
+h2 {
+    margin-top: 0;
+    font-size: 5vh;
+}
+
+.item {
     background-color: var(--body-color);
     overflow: hidden;
     width: 60%;
@@ -19,7 +24,8 @@
     border: 15px;
 }
 
-.products img {
+.products img,
+.best-sellers img {
     width: 200%;
     height: auto;
     object-fit: cover;
@@ -31,31 +37,91 @@ body {
     font-family: var(--paragraph-font);
 }
 
-header nav {
-    background-color: var(--nav-color);
-    color: var(--text-color);
+.products p,
+.best-sellers p {
+    text-align: center;
+    color: var(--inv-text-color);
 }
 
-.products p{
-    text-align: center;
-     color: var(--inv-text-color);
+.product-name {
+    font-weight: bold;
+    font-size: 3vh;
 }
+
+.product-description {
+    font-style: italic;
+}
+
+.product-price {
+    color: var(--inv-text-color);
+    font-size: 2.5vh;
+}
+
+.order-now {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+
+}
+  
+
+
+
+@media (max-width: 700px) {
+
+    .products p,.best-sellers p {
+        max-width: 60%;
+        margin-left: 20%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+
+    }   
+
+    h2 {
+        padding: 30px;
+    }
+
+    .product-price {
+       padding-bottom: 20px;
+    }
+
+}
+
 
 @media (min-width: 700px) {
-    .products {
+    h2 {
+        text-align: left;
+        padding: 3vw 0px 0px 3vw;
+    }
+
+    .products,
+    .best-sellers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px; 
-        padding: 40px;
+        gap: 2vw; 
+        padding: 2vw;
         max-height: 50%;
     }
 
-    .item1, .item2, .item3 {
+    .item {
         width: 100%;
         margin: 0;
     }
 
-    .products img {
+    .products img,
+    .best-sellers img {
         width: 180%;
+    }
+
+    .products p,.best-sellers p {
+        text-align: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }

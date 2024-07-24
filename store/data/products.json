@@ -3,15 +3,15 @@
         "Product Identifier": "HD-I-01",
         "Product Name": "PeakTeton Hoodie",
         "Product Description": "A cozy and stylish hoodie designed for comfort and warmth.",
-        "Product Image URL": "imgs/appare1.png",
+        "Product Image URL": "images/apparel-01.png",
         "Product Price": "$35",
-        "Featured Product": true
+        "Featured Product": false
     },
     {
         "Product Identifier": "HD-I-02",
-        "Product Name": "StoneYellow Hoodie",
+        "Product Name": "SawTooth  Hoodie",
         "Product Description": "A warm hoodie perfect for any casual occasion.",
-        "Product Image URL": "imgs/appare2.png",
+        "Product Image URL": "images/apparel-02.png",
         "Product Price": "$38",
         "Featured Product": false
     },
@@ -19,15 +19,15 @@
         "Product Identifier": "HD-I-03",
         "Product Name": "HeeTarg Hoodie",
         "Product Description": "A stylish hoodie designed to keep you comfortable and relaxed.",
-        "Product Image URL": "imgs/appare3.png",
+        "Product Image URL": "images/apparel-03.png",
         "Product Price": "$32",
         "Featured Product": false
     },
     {
         "Product Identifier": "HD-I-04",
-        "Product Name": "SawTooth Hoodie",
-        "Product Description": "A comfortable hoodie that blends style and functionality.",
-        "Product Image URL": "imgs/appare4.png",
+        "Product Name": "StoneYellow Parka",
+        "Product Description": "A comfortable windbreaker that blends style and functionality.",
+        "Product Image URL": "images/apparel-07.png",
         "Product Price": "$36",
         "Featured Product": false
     },
@@ -35,23 +35,23 @@
         "Product Identifier": "HD-I-05",
         "Product Name": "ManHarri Hoodie",
         "Product Description": "A high-quality hoodie offering both warmth and style.",
-        "Product Image URL": "imgs/appare5.png",
+        "Product Image URL": "images/apparel-08.png",
         "Product Price": "$40",
-        "Featured Product": true
+        "Featured Product": false
     },
     {
         "Product Identifier": "SWS-I-01",
         "Product Name": "ParkIsland Crewneck",
         "Product Description": "A classic crewneck sweatshirt for everyday wear.",
-        "Product Image URL": "imgs/appare6.png",
+        "Product Image URL": "images/apparel-04.png",
         "Product Price": "$28",
-        "Featured Product": false
+        "Featured Product": true
     },
     {
         "Product Identifier": "SWS-I-02",
         "Product Name": "LakeBear Crewneck",
         "Product Description": "A comfortable crewneck sweatshirt perfect for layering.",
-        "Product Image URL": "imgs/appare7.png",
+        "Product Image URL": "images/apparel-06.png",
         "Product Price": "$30",
         "Featured Product": false
     },
@@ -59,23 +59,23 @@
         "Product Identifier": "SWS-I-03",
         "Product Name": "MoonCraters Crewneck",
         "Product Description": "A versatile crewneck sweatshirt suitable for any casual outfit.",
-        "Product Image URL": "imgs/appare8.png",
+        "Product Image URL": "images/apparel-11.png",
         "Product Price": "$27",
-        "Featured Product": false
+        "Featured Product": true
     },
     {
-        "Product Identifier": "TSH-I-01",
-        "Product Name": "RiverSnake T-Shirt",
+        "Product Identifier": "SWS-I-04",
+        "Product Name": "RiverSnake Crewneck",
         "Product Description": "A comfortable t-shirt ideal for warm weather.",
-        "Product Image URL": "imgs/appare9.png",
-        "Product Price": "$18",
-        "Featured Product": false
+        "Product Image URL": "images/apparel-17.png",
+        "Product Price": "$28",
+        "Featured Product": true
     },
     {
         "Product Identifier": "TSH-I-02",
         "Product Name": "ParkPorter T-Shirt",
         "Product Description": "A relaxed t-shirt perfect for casual outings.",
-        "Product Image URL": "imgs/appare10.png",
+        "Product Image URL": "images/apparel-14.png",
         "Product Price": "$14",
         "Featured Product": false
     },
@@ -83,7 +83,7 @@
         "Product Identifier": "TSH-I-03",
         "Product Name": "DuneSands T-Shirt",
         "Product Description": "A soft t-shirt designed for everyday comfort.",
-        "Product Image URL": "imgs/appare11.png",
+        "Product Image URL": "images/apparel-13.png",
         "Product Price": "$12",
         "Featured Product": false
     },
@@ -91,8 +91,8 @@
         "Product Identifier": "TSH-I-04",
         "Product Name": "HoleJackson T-Shirt",
         "Product Description": "A relaxed t-shirt offering comfort and style.",
-        "Product Image URL": "imgs/appare12.png",
+        "Product Image URL": "images/apparel-05.png",
         "Product Price": "$20",
-        "Featured Product": true
+        "Featured Product": false
     }
 ]

@@ -1,0 +1,44 @@
+:root {
+    --text-color: white;
+    --inv-text-color: black; 
+    --body-color: #EDCFC8;
+    --body-color2: white;
+    --header-color: #000000;
+    --nav-color: #000000;
+    --heading-font: Helvetica, serif;
+    --paragraph-font: Helvetica, sans-serif;
+}
+
+.confirmation {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--body-color2);
+}
+
+.confirmation h1 {
+    color: var(--header-color);
+    font-family: var(--heading-font);
+    margin-bottom: 20px;
+}
+
+.confirmation p {
+    margin-bottom: 15px;
+    font-family: var(--paragraph-font);
+    color: var(--inv-text-color);
+}
+
+.confirmation-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmation-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--body-color2);
+}
+
+.confirmation-info p {
+    margin: 5px 0;
+}

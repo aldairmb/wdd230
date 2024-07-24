@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/order.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo-container"><img src="images/logo.jpg" alt="BYU-I Logo"></div>
+            <button id="menubutton"></button>
+            <ul id="navbar">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="order-info">
+            <form id="order-form">
+                <h2>Order Form</h2>
+                <input type="hidden" id="product-id" name="product-id">
+                
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" maxlength="2" pattern="[A-Z]{2}" required>
+                
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" pattern="\d{5}" required>
+                
+                <label for="gift-message">Gift Message (optional):</label>
+                <textarea id="gift-message" name="gift-message"></textarea>
+                
+                <button type="submit">Place Order</button>
+            </form>
+            
+            <div id="product-details">
+                <h2>Order Information</h2>
+                <!-- Product details will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
