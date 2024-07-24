@@ -15,6 +15,19 @@ body {
     margin: 0;
 }
 
+
+footer{
+    text-align: center;
+    background-color: var(--header-color);
+    padding: 30px;
+    color: white;
+}
+
+footer a{
+    text-decoration: underline;
+    color: white;
+}
+
 /* Navigation Styles */
 
 #menubutton {
