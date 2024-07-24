@@ -54,9 +54,10 @@
 /* Best Sellers */
 
 .merch {
-    background-color: var(--text-color);
+    background-color: var(--nav-color);
     padding-top: 0;
     margin-top: 0;
+    color: var(--text-color);
 }
 
 .merch h2 {
@@ -66,7 +67,7 @@
 }
 
 .item {
-    background-color: var(--body-color);
+    background-color: var(--text-color);
     overflow: hidden;
     width: 60%;
     height: auto;
@@ -86,7 +87,7 @@
 .products p,
 .best-sellers p {
     text-align: center;
-    color: var(--inv-text-color);
+    color: var(--text-color);
 }
 
 .product-name {
@@ -105,8 +106,8 @@
 }
 
 .see-more {
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: var(--inv-text-color);
     text-decoration: none;
     padding: 10px 20px;
     border: none;
@@ -119,23 +120,61 @@
 
 .bottom{
     padding: 30px;
-    background-color: var(--body-color):
-
+    background-color: var(--body-color);
+    text-align: center;
 }
 
- /* Bottom Section */
+ /* Weather Section */
+
+ .wheather {
+    color: var(--text-color);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.wheather hr {
+    margin: 40px;
+}
 
  .wheather, .order-count {
-    background-color: var(--text-color);
+    background-color: var(--header-color);
+    color: var(--text-color);
     margin: 30px;
     padding: 30px;
+ }
+
+ #forecast img,
+#wheather1 img {
+    width: 50px;
+    height: auto;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#forecast section {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+ /* Orders Section */
+
+ .order-count img {
+    max-width: 80%;
+
  }
 
 
 
 @media (max-width: 700px) {
 
-    .products p,.best-sellers p {
+    .products p,.best-sellers p, .see-more{
         max-width: 60%;
         margin-left: 20%;
         margin-top: 5px;
@@ -145,8 +184,8 @@
     }   
 
 
-    .product-price {
-       padding-bottom: 20px;
+    .see-more {
+       margin-bottom: 40px;
     }
 
 }
@@ -223,10 +262,10 @@
     .bottom{
         display: grid;
         grid-template-columns: 1fr 2fr;
-
+        text-align: left;
     }
 
-}
+
 
 /* Styles for screens 1100px and wider */
 @media screen and (min-width: 1100px) {
@@ -235,7 +274,7 @@
     }
 
     .hero h1 {
-        font-size: 15vw;
+        font-size: 15rem;
     }
     
     .hero div {
@@ -264,6 +303,7 @@
     }
 
     
-}
+    }
+    }
 
  

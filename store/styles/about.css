@@ -1,0 +1,93 @@
+:root {
+    --text-color: white;
+    --inv-text-color: black; 
+    --body-color: #EDCFC8;
+    --body-color2: white;
+    --header-color: #000000;
+    --nav-color: #000000;
+    --heading-font: Helvetica, serif;
+    --paragraph-font: Helvetica, sans-serif;
+}
+
+
+/* Style for the overlay text */
+.heroe h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 20vh;
+    text-align: center;
+    z-index: 1;
+}
+
+
+#heroe1, #heroe3 {
+    display: none;
+}
+
+.heroe img{
+    display: block;
+    width: 100%;
+}
+
+.company-info{
+    padding: 5%;
+    font-size: 2vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h2{
+    padding-left: 5%;
+}
+
+.cardmap {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+@media screen and (min-width: 400px){
+
+    .heroe h1 {
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16vh;
+    }
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+    .heroe {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .heroe picture img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #heroe1, #heroe3 {
+        display: block;
+    }
+
+    .heroe h1 {
+        top: 30%;
+        left: 50%;
+        font-size: 16vw;
+    }
+    
+
+
+}
